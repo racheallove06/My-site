@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsPersonFill } from "react-icons/bs";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import Link from "next/link";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";                                               
+import { AiOutlineMail } from "react-icons/ai";                                                      
+import { BsPersonFill } from "react-icons/bs";                                                                                                               
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";                                                                                    
+import Link from "next/link";                      
 const Contact = () => {
-  return (
+  return (                 
     <div id="contact" className="w-full lg:h-screen ">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#12bcda] ">
@@ -28,29 +28,38 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="py-4">Racheal Nyawira</h2>
-                <p>Front-End Develper</p>
+                <p>Web Develper</p>
                 <p className="py-4">
-                  Looking for a role as an intern or a freelancer
+                  I am willing and flexible to take any opportunity that may
+                  better fit my qualifications
                 </p>
               </div>
               <div>
                 <p className="uppercase pt-8 ">Connect With Me </p>
                 <div className="flex items-center justify-between py-4">
                   <div className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
+                    <a href="https://www.linkedin.com/in/racheal-muchiri-455665249/">
+                      <FaLinkedinIn />{" "}
+                    </a>
                   </div>
 
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
-                    <FaGithub />
+                    <a href="https://github.com/racheallove06">
+                      {" "}
+                      <FaGithub />{" "}
+                    </a>
                   </div>
 
                   <div className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
+                    <a href="mailto:rachealloveo6@gmail.com">
+                      {" "}
+                      <AiOutlineMail />
+                    </a>
                   </div>
 
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  {/*} <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <BsPersonFill />
-                  </div>
+                  </div>*/}
                 </div>
               </div>
             </div>
@@ -87,14 +96,14 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="flex flex-col py-2">
+                {/*<div className="flex flex-col py-2">
                   {" "}
                   <label className="uppercase text-sm py-4">Email</label>
                   <input
                     className="border-2 border-gray-300 rounded-lg flex p-3"
                     type="text"
                   />
-                </div>
+  </div>*/}
 
                 <div className="flex flex-col py-2">
                   {" "}

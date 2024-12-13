@@ -1,11 +1,11 @@
 "use client";
-                            
+
 import React, { useState } from "react";
-import Image from "next/image";                                                             
+import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonLine } from "react-icons/ri";
 import { AiOutlineMenu } from "react-icons/ai";
-import dashboard from "../../../../public/assets/modern.png";
+import web3 from "../../../../public/assets/hoobank.png";
 
 const Page = () => {
   const [nav, setNav] = useState(false);
@@ -17,7 +17,7 @@ const Page = () => {
     <div className="w-full ">
       <div className="fixed w-full h-20 shadow-xl z-[100]">
         <div className="flex justify-between items-center  w-full h-full px-2 2xl:px-16">
-          {/*}  <Link href="/">
+          {/*} <Link href="/">
             {" "}
             <Image
               src="/assets/bglogoo.png"
@@ -25,7 +25,7 @@ const Page = () => {
               width="125"
               height="50"
             />
-  </Link>*/}
+  </Link> */}
 
           <div>
             <ul className="hidden md:flex">
@@ -83,12 +83,12 @@ const Page = () => {
           className=" absolute z-1 "
           layout="fill"
           objectFit="cover"
-          src={dashboard}
+          src={web3}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[10%] right-[10%]  translate-x-[-50%] translaye-y-[-50%] text-white pb-5 z-10">
           <h2>Commercial Website</h2>
-          <h3 className="pb-9">ReactJs| Tailwind | </h3>
+          <h3 className="pb-9">React JS | Tailwind | </h3>
         </div>
       </div>
 
@@ -96,29 +96,23 @@ const Page = () => {
         <div className="col-span-4">
           <h2>Project Overview</h2>
           <p className="mt-3 text-gray-600">
-            . Translated UI/UX design concepts into a dynamic React admin
-            dashboard, harnessing the capabilities of Syncfusion components,
-            including charts, kanban, editor, and calendar.
-            <br /> . Leveraged React to implement advanced customization and
-            theming options, enabling a personalized and cohesive user
-            experience with features like color change and a sleek dark mode.
-            <br /> . Utilized Tailwind CSS to bring the UI/UX design to life,
-            creating a visually stunning and modern dashboard interface while
-            maintaining a professional look.
-            <br /> . Integrated Syncfusion charts, such as Area Charts and Bar
-            Charts, to enhance data-driven decision-making within the dashboard.
-            <br /> . Optimized performance through efficient React coding
-            practices and data handling, ensuring a highly responsive and
-            efficient dashboard application.
+            . Converted a UI/UX design for hoobank landing page using Vite,
+            enhancing my styling with Tailwind CSS.
+            <br /> . Structured the platform for a seamless shopping experience,
+            ensuring an organized and user-friendly layout.
+            <br /> . Applied modern design elements with Tailwind CSS, giving
+            the landing page an attractive and professional appearance.
+            <br /> . Enhanced user interaction using Vite and incorporated
+            Tailwind CSS for a more enjoyable and user-friendly interface.
+            <br />
           </p>
 
           <button className="py-2 px-8 mt-4 mr-8">
             {" "}
-            <a href="https://modern-xukm.vercel.app/">Demo </a>{" "}
+            <a href="https://hoobank-pearl-beta.vercel.app/">Demo </a>
           </button>
           <button className="py-2 px-8 mt-4">
-            {" "}
-            <a href="https://github.com/racheallove06/Modern ">Code </a>
+            <a href="https://github.com/racheallove06/hoobank">Code </a>
           </button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -128,7 +122,7 @@ const Page = () => {
               <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
                 <RiRadioButtonLine className="pr-1" />
-                React
+                Vite
               </p>
               <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
@@ -138,17 +132,12 @@ const Page = () => {
               {/* <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
                 <RiRadioButtonLine className="pr-1" />
-                
+                ThirdWeb
               </p>
               <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
                 <RiRadioButtonLine className="pr-1" />
-                React-Router
-              </p>
-              <p className="text-gray-600 py-2 flex items-center ">
-                {" "}
-                <RiRadioButtonLine className="pr-1" />
-                React Context
+                Tailwind
               </p> */}
             </div>
           </div>

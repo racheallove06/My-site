@@ -6,10 +6,15 @@ import css from "../../public/assets/css.png";
 import javascript from "../../public/assets/javascript.png";
 import react from "../../public/assets/react.png";
 import nextjs from "../../public/assets/nextjs.png";
-import redux from "../../public/assets/Redux.jpeg";
+import redux from "../../public/assets/Redux.svg";
 import tailwind from "../../public/assets/tailwind.png";
-import vue from "../../public/assets/Vue.svg";
 import bootstrap from "../../public/assets/Bootstrap.svg";
+import material from "../../public/assets/Material.svg";
+import vue from "../../public/assets/mongo.svg";
+import sass from "../../public/assets/Sass.svg";
+import ts from "../../public/assets/sanity.svg";
+import cloud from "../../public/assets/cloud.svg";
+
 
 const Skills = () => {
   return (
@@ -18,7 +23,7 @@ const Skills = () => {
         <p className="text-xl tracking-widest uppercase text-[#12BCDA]">
           Skills
         </p>
-        <h2>What I Can Do</h2>
+        <h2 className="mt-3">What I Can Do</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <SkillsItem skillImage={html} text="Html" />
           <SkillsItem skillImage={css} text="CSS" />
@@ -27,10 +32,13 @@ const Skills = () => {
           <SkillsItem skillImage={nextjs} text="NEXT.JS" />
           <SkillsItem skillImage={redux} text="REDUX" />
           <SkillsItem skillImage={tailwind} text="TAILWIND" />
-          <SkillsItem skillImage={vue} text="VUE" />
+          <SkillsItem skillImage={material} text="MATERIAL UI" />
           <SkillsItem skillImage={bootstrap} text="BOOTSTRAP" />
-          <SkillsItem skillImage={html} text="Html" />
-          <SkillsItem skillImage={html} text="Html" />
+          <SkillsItem skillImage={vue} text="MONGO" />
+          <SkillsItem skillImage={ts} text="SANITY" />
+          <SkillsItem skillImage={sass} text="SASS" />
+           <SkillsItem skillImage={cloud} text="CLOUD" />
+          <SkillsItem skillImage={mongodb} text="MONGODB" />
         </div>
       </div>
     </div>

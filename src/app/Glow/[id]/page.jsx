@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonLine } from "react-icons/ri";
 import { AiOutlineMenu } from "react-icons/ai";
-import commercialimg from "../../../../public/assets/commercial.png";
+import commercialimg from "../../../../public/assets/glowing.png";
 
-const commercial = () => {
+const Page = () => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -17,7 +17,7 @@ const commercial = () => {
     <div className="w-full ">
       <div className="fixed w-full h-20 shadow-xl z-[100]">
         <div className="flex justify-between items-center  w-full h-full px-2 2xl:px-16">
-          <Link href="/">
+          {/* <Link href="/">
             {" "}
             <Image
               src="/assets/bglogoo.png"
@@ -25,7 +25,7 @@ const commercial = () => {
               width="125"
               height="50"
             />
-          </Link>
+          </Link> */}
 
           <div>
             <ul className="hidden md:flex">
@@ -95,20 +95,30 @@ const commercial = () => {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 absolute left-[10%] right-[10%]  ">
         <div className="col-span-4">
           <h2>Project Overview</h2>
-          <p>
-            The React Weather App is a user-friendly, responsive web application
-            designed to provide real-time weather information to users with ease
-            and convenience. Built with React.js, this project utilizes a range
-            of modern web development technologies to fetch and display
-            up-to-date weather data from various locations around the world.
-            Users can simply enter a location or use geolocation services to
-            retrieve accurate weather forecasts, including temperature,
-            humidity, wind speed, and more. With an intuitive and visually
-            appealing interface, the React Weather App offers a seamless user
-            experience for staying informed about current weather conditions.
+          <p className="mt-3 text-gray-600">
+            . Developed a skincare products e-commerce website using HTML, CSS,
+            and JavaScript, enhancing my CSS skills along the way.
+            <br /> . Structured the site with HTML to create an organized
+            layout, ensuring a smooth and user-friendly shopping experience.
+            <br /> . Elevated the websites visual appeal by applying CSS styling
+            techniques, crafting an attractive and professional look for
+            showcasing skincare products.
+            <br /> . Implemented interactive features using JavaScript to
+            enhance user engagement, contributing to a more enjoyable and
+            user-friendly interface.
+            <br /> . Applied SEO strategies to optimize the website for search
+            engines, ensuring better visibility and reach for the skincare
+            products.
           </p>
-          <button className="py-2 px-8 mt-4 mr-8">Demo</button>
-          <button className="py-2 px-8 mt-4">Code</button>
+
+          <button className="py-2 px-8 mt-4 mr-8">
+            {" "}
+            <a href=" https://glowing-rho.vercel.app/"> Demo</a>
+          </button>
+          <button className="py-2 px-8 mt-4">
+            {" "}
+            <a href=" https://github.com/racheallove06/Glowing"> Code</a>
+          </button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -117,28 +127,28 @@ const commercial = () => {
               <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
                 <RiRadioButtonLine className="pr-1" />
-                React
+                HTML
               </p>
               <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
                 <RiRadioButtonLine className="pr-1" />
-                React
+                CSS
               </p>
               <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
                 <RiRadioButtonLine className="pr-1" />
-                React
+                SEO
               </p>
               <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
                 <RiRadioButtonLine className="pr-1" />
-                React
+                Javascript
               </p>
-              <p className="text-gray-600 py-2 flex items-center ">
+              {/* <p className="text-gray-600 py-2 flex items-center ">
                 {" "}
                 <RiRadioButtonLine className="pr-1" />
                 React
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -147,4 +157,4 @@ const commercial = () => {
   );
 };
 
-export default commercial;
+export default Page;
